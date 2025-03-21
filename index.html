@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organ Donation Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Organ Donation Management System</h1>
+        <button onclick="connectWallet()">Connect Wallet</button>
+        <p id="account">Not Connected</p>
+    </header>
+
+    <main>
+        <h2>Register as a Donor</h2>
+        <input type="text" id="name" placeholder="Full Name">
+        <input type="number" id="age" placeholder="Age">
+        <input type="text" id="organ" placeholder="Organ to Donate">
+        <button onclick="registerDonor()">Register</button>
+
+        <h2>Donor List</h2>
+        <button onclick="fetchDonors()">Load Donors</button>
+        <ul id="donorList"></ul>
+    </main>
+
+    <script src="web3.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
